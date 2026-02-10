@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "newdawn:steel_block"
+    }
+  ],
+  "result": {
+    "item": "newdawn:steel_ingot",
+    "count": 9
+  }
+}

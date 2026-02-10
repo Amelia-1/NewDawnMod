@@ -20,12 +20,14 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.newdawn_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
 
+                        output.accept(ModBlocks.STEEL_BLOCK.get());
                         output.accept(ModItems.STEEL_INGOT.get());
+                        output.accept(ModItems.STEEL_NUGGET.get());
                         output.accept(ModItems.STEEL_DUST.get());
 
                         output.accept(ModItems.RAW_LEAD.get());
 
-                        output.accept(ModBlocks.STEEL_BLOCK.get());
+
                     })
                     .build());
 
