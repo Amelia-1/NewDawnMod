@@ -13,7 +13,7 @@ public class ModTags {
 
 
         private static TagKey<Block> tag(String name){
-            return BlockTags.create(new ResourceLocation(NewDawn.MOD_ID, name));
+            return BlockTags.create(ResourceLocation.fromNamespaceAndPath(NewDawn.MOD_ID, name));
         }
     }
 

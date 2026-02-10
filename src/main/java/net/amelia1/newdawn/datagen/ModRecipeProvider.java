@@ -26,7 +26,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
         oreBlasting(pWriter, LEAD_SMELTABLES, RecipeCategory.MISC, ModItems.STEEL_NUGGET.get(), 0.25f, 100, "lead");
-        oreBlasting(pWriter, LEAD_SMELTABLES, RecipeCategory.MISC, ModItems.STEEL_NUGGET.get(), 0.25f, 200, "lead");
+        oreSmelting(pWriter, LEAD_SMELTABLES, RecipeCategory.MISC, ModItems.STEEL_NUGGET.get(), 0.25f, 200, "lead");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.STEEL_BLOCK.get())
                 .pattern("SSS")
