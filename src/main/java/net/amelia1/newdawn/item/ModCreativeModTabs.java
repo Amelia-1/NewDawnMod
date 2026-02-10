@@ -26,6 +26,10 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.STEEL_DUST.get());
 
                         output.accept(ModItems.RAW_LEAD.get());
+                        output.accept(ModBlocks.LEAD_ORE.get());
+
+                        output.accept(ModItems.METAL_DETECTOR.get());
+                        output.accept(ModBlocks.SOUND_BLOCK.get());
 
 
                     })

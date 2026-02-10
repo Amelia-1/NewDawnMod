@@ -1,6 +1,7 @@
 package net.amelia1.newdawn.item;
 
 import net.amelia1.newdawn.NewDawn;
+import net.amelia1.newdawn.item.custom.MetalDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -20,9 +21,13 @@ public class ModItems {
     public static final RegistryObject<Item> STEEL_NUGGET = ITEMS.register("steel_nugget",
             () -> new Item(new Item.Properties()));
 
-
     public static final RegistryObject<Item> RAW_LEAD = ITEMS.register("raw_lead",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
+            () -> new MetalDetectorItem(new Item.Properties()
+                    .durability(100)
+            ));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
