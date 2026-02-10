@@ -1,6 +1,7 @@
 package net.amelia1.newdawn;
 
 import com.mojang.logging.LogUtils;
+import net.amelia1.newdawn.block.ModBlocks;
 import net.amelia1.newdawn.item.ModCreativeModTabs;
 import net.amelia1.newdawn.item.ModItems;
 import net.minecraft.client.Minecraft;
@@ -36,6 +37,7 @@ public class NewDawn
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -55,9 +57,7 @@ public class NewDawn
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItems.STEEL_INGOT);
-        }
+
     }
 
     @SubscribeEvent

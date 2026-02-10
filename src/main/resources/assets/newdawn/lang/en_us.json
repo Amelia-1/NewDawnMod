@@ -1,5 +1,9 @@
 {
   "item.newdawn.steel_ingot": "Steel Ingot",
+  "item.newdawn.steel_dust": "Steel Dust",
+  "item.newdawn.raw_lead": "Raw Lead",
+
+  "block.newdawn.steel_block": "Block of Steel",
 
   "creativetab.newdawn_tab": "New Dawn"
 }
